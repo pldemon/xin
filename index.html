@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <title>18计二班级页面</title>
+        <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+        <script type="text/javascript" src="animate.js"></script>
+        <script type="text/javascript" src="my.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="first">
+                <div class="title">
+                    <div class="dl" onclick="enter()">登录</div>
+                    <div class="zc" onclick="sign()">注册</div>
+                </div>
+                <div class="left">
+                    <div class="up">
+                        <p>THE SCIENCE</p>
+                        <p>AND</p>
+                        <p>TECHNOLOGY</p>
+                        <p>OF THE COMPUTER</p>
+                        <p>CLASS TWO</p>
+                    </div>
+                    <div class="down">
+                        <a href="index2.html"> 
+                            <img src="a.png"></img>
+                            <span style="color:black;">计二简介</span>
+                        </a>
+                    </div>
+                    <div class="intru">
+                        <p>班主任，辅导员简介</p>
+                    </div>
+                </div>
+                <!--登录注册二选一-->
+                <div class="right" id="box">
+                    <!--登录-->
+                    <form method="POST" id="enter">
+                        <ul class="content1">
+                            <li><input type="text" placeholder="学号" id="num" name"num" required></li>
+                            <li><input type="password" placeholder="密码" id="password" name="password" required></li>
+                        </ul>
+                        <div class="submit1">
+                            <button type="submit">登录</button>
+                        </div>
+                    </form>
+                    <!--注册-->
+                    <form method="POST" id="sign">
+                        <ul class="content2">
+                            <li><input type="text" placeholder="学号" id="num" name"num" maxlength="12" required></li>
+                            <li><input type="password" placeholder="密码" id="password" name="password" required></li>
+                            <li><input type="password" placeholder="确认密码" id="password" name="password" required></li>
+                            <div class="tips">
+                                <p>Tips</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;学号将作为身份认证进行登录</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;立即绑定手机号/QQ号/微信/邮箱</p>
+                                <p>登录更便捷</p>
+                            </div>
+                        </ul>
+                        <div class="submit2">
+                                <button type="submit">放弃绑定，完成注册</button>
+                            </div>
+                    </form>
+                </div>
+            </div>
+            <div class="second">
+                <p style="top:20px;">Our Stories</p>
+                <div class="wrap" id="wrap">
+                    <div class="slide" id="slide">
+                            <ul>
+                                <li><a href="#"><img src="1.jpg" alt=""/></a></li>
+                                <li><a href="#"><img src="2.jpg" alt=""/></a></li>
+                                <li><a href="#"><img src="3.jpg" alt=""/></a></li>
+                                <li><a href="#"><img src="4.jpg" alt=""/></a></li>
+                                <li><a href="#"><img src="5.jpg" alt=""/></a></li>
+                            </ul>
+                        <div class="arrow" id="arrow">
+                            <a href="javascript:;" class="prev" id="arrLeft"></a>
+                            <a href="javascript:;" class="next" id="arrRight"></a>
+                        </div>
+                    </div>
+                    <div class="fun">
+                        <p style="font-size:96px;"><a href="index3.html" target="_blank">照片墙</a></p>
+                        <p style="font-size:77px;width: 166px;left: 70%;position: relative;"><a href="index3.html" target="_blank">游园</a></p>
+                        <p style="font-size:55px;width: 120px;left: 30%;position: relative;"><a href="index3.html" target="_blank">军训</a></p>
+                        <p style="font-size:70px;width: 152px;position: relative;left: 57%;"><a href="index3.html" target="_blank">内建</a></p>
+                        <p style="font-size:70px;"><a href="index3.html" target="_blank">辩论赛</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="third">
+                <div class="calender"></div>
+                <div class="January"></div>
+            </div>
+            <div class="footer" style="background-color:floralwhite; text-align:center; height:100px;">
+                <p style="font-size:25px;color:#cfcfcf;line-height: 100px;">湘潭大学 信息工程学院 18级 计算机科学与技术二班</p>
+            </div>
+        </div>
+
+    </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
